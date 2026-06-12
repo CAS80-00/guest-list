@@ -1,0 +1,60 @@
+/* Centers the entire application container on the page */
+.app-container {
+  max-width: 750px;
+  margin: 40px auto; /* Centers the block horizontally on the screen */
+  padding: 20px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the title and list contents */
+}
+
+/* Centers the main h1 heading */
+.app-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Restricts the width of the list to keep everything clean */
+.guest-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Spans the full width of the 750px container */
+}
+
+.list-headers {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  margin-bottom: 5px;
+}
+
+/* Row wrapper for each guest card */
+.guest-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px 20px;
+  transition: background-color 0.2s ease;
+}
+
+.guest-item:hover {
+  background-color: #f5f5f5;
+}
+
+.list-headers span,
+.guest-item h3,
+.guest-item p {
+  margin: 0;
+  padding: 0;
+  flex: 1; /* Makes Name, Email, and Phone take up identical space */
+  text-align: center; /* Centers the text content inside each column block */
+  font-size: 0.95rem;
+}
